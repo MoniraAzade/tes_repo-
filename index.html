@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inherit style</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="/img/bangladesh.jpg" type="image/x-icon">
+</head>
+<body>
+    <h1>Hello World</h1>
+    <br>
+    <p class="inset">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi architecto vel quam adipisci perferendis, deleniti, obcaecati corporis inventore, fugiat officia ipsum assumenda a dolorem voluptas omnis deserunt doloremque maiores magnam. Voluptatum ipsum odio at labore, sit eligendi doloremque quibusdam a nisi, pariatur officia soluta nobis! Corrupti quibusdam modi ut mollitia.</p>
+
+    <h2 class="red-text">Hello Country</h2>
+    <br>
+
+    <div class="ex2">
+    <p class="prg double">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates animi voluptatum autem minus sapiente magnam, sequi eius doloremque, eos dolorem mollitia ducimus assumenda necessitatibus sed laudantium, laboriosam et deserunt repudiandae.</p>
+    </div>
+
+    <br>
+
+    <div class="row">
+        <div class="column">
+            <img src="img/bangladesh.jpg" alt="">
+            <h4>Bangladesh</h4>
+    </div>
+
+    <div class="column">
+        <img src="img/canada.jpg" alt="">
+        <h4>Canada</h4>
+
+
+    </div>
+
+    <div class="column">
+        <img src="img/italy.jpg" alt="">
+        <h4>Italy</h4>
+
+    </div>
+
+    <div class="column">
+        <img src="img/switzerland.jpg" alt="">
+        <h4>Switzerland</h4>
+
+    </div>
+
+    </div>
+  
+
+    <br>
+
+    <h2 class="h2">Sign Up</h2>
+
+    <form>
+
+        <label for="fname"> First Name:</label><br>
+        <input class="inset" type="text"><br>
+
+        <label for="lname">Last Name:</label><br>
+        <input class="inset" type="text"><br>
+
+        <label for="e-mail">E-mail:</label><br>
+        <input class="inset" type="e-mail"><br>
+
+        phone: +880
+        <input type="tel" id="phone" name="phone" placeholder="123-456-6789" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required> <br> <br>
+        Password:
+        <input type="password"> <br><br>
+        profile picture:
+        <input type="file"> <br><br>
+        Gender:
+        <input type="radio" value="male" name="gender">
+        Male
+        <input type="radio" value="female" name="gender">
+        Female
+        <input type="radio" value="others" name="gender">
+        Others
+        <br><br>
+        Date of birth:
+        <input type="date">
+        <br><br>
+        Age Group:
+        <input type="checkbox"> 10-15
+        <input type="checkbox"> 16-20
+        <input type="checkbox"> 21-30
+        <br><br>
+        profession:
+        <br>
+        <input type="checkbox" id="profession1" name="profession" value="teaching">
+        <label for="profession1"> I'm a teacher</label><br>
+        <input type="checkbox" id="profession2" name="profession" value="dancing">
+        <label for="profession2"> I'm a dancer</label><br>
+        <input type="checkbox" id="profession3" name="profession" value="singing">
+        <label for="profession3"> I'm a singer</label><br>
+        <br>
+        <label for="gsearch">Search Google:</label>
+        <input type="search" id="gsearch" name="gsearch">
+        <input type="submit"><br>
+        <br><br>
+        Favourite Color:
+        <input type="color">
+        <br><br>
+        Select range:
+        <input type="range"  name="range"  min="0" max="100">
+        <br> <br>
+        Select a time:
+        <input type="time">
+        <br><br>
+        <button class="design">Submit</button> or <button class="design">Cancel</button>
+        <br><br>
+        
+    </form>
+
+
+    <h3>Login Form</h3>
+
+    <button onclick="document.getElementById('id01').style.display='block'"
+    style="width:auto;">Login</button>
+
+    <div id="id01" class="modal"></div>
+
+    <form class="modal-content animate" action="/action_page.php" method="post">
+        <div class="imgcontainer">
+
+
+    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <img src="img/Jackie.jpeg"Jackie" class="Jackie">
+          </div>
+
+    <div class="container">
+        <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+            <br>
+
+        <label for="psw"><b>Password</b></label>
+            <input type="text" placeholder="Enter Password" name="psw" required>
+            <br>
+
+            <button type="submit">Login</button>
+              
+            <label>
+                <input type="checkbox" checked="checked" name="remember">Remember me
+            </label>
+
+    </div>
+
+            
+    <div class="container" style="background-color:#f1f1f1">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <span class="psw">Forgot <a href="#">password?</a></span>
+      </div>
+    </form>
+  </div>
+
+
+  <script>
+    // Get the modal
+    var modal = document.getElementById('id01');
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+    </script>
+
+    <h4 class="mid text-align height">Jackie Jonas</h4>
+    <hr>
+    <p class="text-align">Lorem ipsum<strong> dolor sit amet, consectetur adipisicing elit. Impedit cum optio vero distinctio quos animi eos, alias iure expedita aliquam quidem quas eum. Perspiciatis provident placeat dolore. Ex, nihil aliquid eveniet et dolor obcaecati harum perferendis esse minus animi architecto quibusdam veritatis qui culpa ipsam cupiditate totam aspernatur veniam necessitatibus.</p>
+
+    <hr>
+    
+
+    <div class="container">
+        <div class="image">
+          <img src="img/Jackie.jpeg">
+        </div>
+
+
+        <div class="text">
+          <h1>switzerland is one of the most beautiful cities in France.</h1>
+        </div>
+      </div>
+
+
+      <img id="home" src="img/home-button-5836498.jpg" width="1" height="1">
+
+      <img id="next" src="img/previous-button.png" width="1" height="1">
+
+      <img id="next" src="img/next-button-clipart.png" width="1" height="1">
+
+
+      <h3>Register Form</h3>
+
+<div>
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="Switzerland">Switzerland</option>
+      <option value="canada">Canada</option>
+      <option value="Italy">Italy</option>
+      <option value="Bangladesh">Bangladesh</option>
+    </select>
+
+    <div class="row">
+        <div class="col-25">
+          <label for="subject">Subject</label>
+        </div>
+        <div class="col-75">
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+        </div>
+      </div>
+      <div class="row">
+        <input type="submit" value="Submit">
+      </div>
+
+    <input type="reset" value="Reset">
+
+
+  </form>
+</div>
+    
+<table id="customers">
+        
+    <tr>
+      <th>Company</th>
+      <th>Contact</th>
+      <th>Country</th>
+    </tr>
+    <br>
+
+    <tr>
+        <td>Laughing Bacchus Winecellars</td>
+        <td>Justin Trudeau</td>
+        <td>Canada</td>
+      </tr>
+      <br>
+    
+      <tr>
+        <td>Magazzini Alimentari Riuniti</td>
+        <td>Lorenjo</td>
+        <td>Italy</td>
+      </tr>
+      <br>
+
+      <tr>
+          <td>Königlich Essen</td>
+          <td>Jackie</td>
+          <td>Switzerland</td>
+      </tr>
+      <br>
+
+      <tr>
+          <td>Jamuna Company</td>
+          <td>Badhon Haque</td>
+          <td>Bangladesh</td>
+      </tr>
+      <br>
+
+      </table>
+      <br> <br>
+</body>
+</html>

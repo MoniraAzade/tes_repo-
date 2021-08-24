@@ -1,0 +1,413 @@
+body{
+  
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+}
+
+p{
+    font-family: cursive;
+    color: darkseagreen;
+    font-size: 20px;
+}
+
+
+.red-text{
+    color: rgb(173, 1, 30);
+}
+
+
+.prg{
+    color: orange;
+ }
+
+*{
+ box-sizing: border-box;
+}
+
+.row{
+display:flex;
+}
+
+.column{
+ flex: 33.33%;
+ padding: 5px;
+}
+
+selector:pseudo-class {
+ property: 
+}
+
+.toon{
+
+}
+
+img{
+ height: 200px;
+ width: 200px ;        
+}
+
+
+img:hover{
+    height:300px;
+    width:300px;
+            
+}
+
+h4:hover{
+    font-size:  40px;
+}
+
+p.double{
+    border-style: double;
+}
+
+p.inset{
+    border-style: inset;
+}
+
+input.inset{
+
+    border-style: inset;
+}
+
+
+div.ex1{
+    background-color: darkgray;
+    padding: 15px;
+    border: 2px solid black;
+
+}
+
+
+div.ex2{
+    background-color: cornsilk;
+    border: 4px solid orange;
+        
+}
+
+
+h2{
+    color: blue;
+}
+
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+        
+/* full-width input fields */
+input[type=text], input[type=password]{
+
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+
+    }
+
+
+/* set a style for all buttons */
+button{
+
+    background-color: lightgreen;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    cursor: pointer;
+    width: 100%;
+
+    }
+
+
+button: :hover{
+    opacity: 0.8;
+}
+
+
+/* extra style for the cancel button */
+.cancelbtn{
+
+    width: auto;
+    padding: 10px 18px;
+    background-color: maroon;
+
+}
+
+
+/* center the image and position the close button */
+.imgcontainer{
+
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+
+}
+
+
+img.Jackie{
+
+    width: 40%;
+    border-radius: 50%;
+
+}
+
+
+span.psw{
+
+float: right;
+padding-top: 16px;
+
+}
+
+
+/* the modal (background) */
+.modal{
+
+  display: none; /* hidden by default */
+  position: fixed; /* stay in place */
+  z-index: 1; /* sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* full width */
+  height: 100%; /* full height */
+  overflow: auto; /* enable scroll if needed */
+  background-color: rgb(0,0,0); /*fallback color */ 
+  background-color: rgb(0,0,0,0.4);
+  /* black w/ opacity */
+  padding-top: 60px;
+            
+}
+
+
+ /* modal content/box */
+.modal-content{
+     background-color: #fefefe;
+            margin: 5% auto 15% auto;/*5% from the top, 15% from the bottom and centered */
+            border: 1px solid #888;
+            width: 80%; /*could be more and less , depending on screen size */
+
+        }
+
+
+        /*the close button (x) */
+        .close{
+
+            position: absolute;
+            right: 25px;
+            top: 0;
+            color: #000;
+            font-size: 30px;
+            font-weight: bold;
+
+        }
+
+        .close:hover,
+        .close:focus{
+
+            color:red;
+            cursor: pointer;
+            
+        }
+
+
+        /* add zoom animation */
+        .animate{
+
+            -webkit-animation: animatezoom 0.6s;
+            animation: animatezoom 0.6s;
+            
+        }
+
+
+        @-webkit-keyframes animatezoom{
+
+            form{transform: scale(0)}
+            to{transform: scale(1)}
+
+        }
+
+
+        /*change styles for span and cancel button on extra small screens */
+         @media screen and (max-width; 300px){
+             span.psw{
+                 display: block;
+                 float: none;
+
+             }
+
+             .cancelbtn{
+
+                width: 100%;             
+            }
+
+         }
+
+
+         .design{
+
+             background-color: deepskyblue;
+             color: white;
+             padding-left: .5px;
+             padding-right: .5px;
+
+         }
+
+
+         .mid{
+
+                position: inherit;
+                color: royalblue;
+         }
+
+
+         .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+
+
+          img {
+            max-width: 100%;
+          }
+
+
+          .image {
+            flex-basis: 40%;
+          }
+
+
+          .text {
+            font-size: 20px;
+            padding-left: 20px;
+          }
+
+
+
+          p{
+
+            text-align: justify;
+          }
+
+
+          h4{
+
+            text-align: center;
+            height: 25px;
+
+          }
+            
+         
+         
+          #home {
+            width: 46px;
+            height: 44px;
+            background: url(img/home-button-5836498.jpg) 0 0;
+          }
+          
+          #prev {
+            width: 43px;
+            height: 44px;
+            background: url(img/previous-button.png) -91px 0;
+          }
+
+         #next {
+            width: 43px;
+            height: 44px;
+            background: url(img/next-button-clipart.png) -91px 0;
+        }
+
+
+        
+        input[type=text], select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+          }
+          
+          input[type=submit] {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+          }
+          
+          input[type=submit]:hover {
+            background-color: #45a049;
+          }
+          
+          div {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+          }
+          input[type=text]:focus {
+            background-color: lightblue;
+          }
+
+          input[type=reset] {
+            background-color: #d40000;
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            text-decoration: none;
+            margin: 4px 2px;
+            cursor: pointer;
+          }
+          
+
+          .col-75 {
+            float: left;
+            width: 75%;
+            margin-top: 6px;
+          }
+          
+          /* Clear floats after the columns */
+          .row:after {
+            content: "";
+            display: table;
+            clear: both;
+          }
+          
+          /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+          @media screen and (max-width: 600px) {
+            .col-25, .col-75, input[type=submit] {
+              width: 100%;
+              margin-top: 0;
+            }
+
+
+            #customers {
+                font-family: Arial, Helvetica, sans-serif;
+                border-collapse: collapse;
+                width: 100%;
+              }
+              
+              #customers td, #customers th {
+                border: 1px solid #ddd;
+                padding: 8px;
+              }
+              
+              #customers tr:nth-child(even){background-color: #f2f2f2;}
+              
+              #customers tr:hover {background-color: #ddd;}
+              
+              #customers th {
+                padding-top: 12px;
+                padding-bottom: 12px;
+                text-align: left;
+                background-color: #04AA6D;
+                color: white;
+              }
+
